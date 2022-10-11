@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, javascript, front end developer, developer">
+    <meta name="author" content="Eleni Danessis">
+    <meta property="og:type" content="website" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Eleni Danessis 3.2</title>
+
+    <!-- Font Awesome Script Tag -->
+    <script src="https://kit.fontawesome.com/ffaa0aea6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-light navbar-dark py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">Eleni Danessis</a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#collaborate" class="nav-link">Collaborate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+
+    <!-- Top -->
+    <section class="bg-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Hi, my name is Eleni.</h1>
+                    <p class="lead my-4">
+                        I'm based in Toronto, Canada <i class="fa-brands fa-canadian-maple-leaf text-danger"></i>,
+                         and am looking for opportunities as a frontend developer.
+                        I'm trained in <i class="fa-brands fa-html5 text-danger"></i>, <i class="fa-brands fa-css3-alt text-primary"></i>, 
+                        <i class="fa-brands fa-square-js text-warning"></i>, <i class="fa-brands fa-bootstrap text-primary"></i>, and 
+                        <i class="fa-brands fa-react text-info"></i>.
+                    </p>
+                </div>
+                <img class="img-fluid w-50" src="img/dev.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-secondary text-light p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img class="img-fluid" src="img/web.svg" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h1>About</h1>
+                    <p class="lead my-4">
+                        I currently work in digital learning and admissions. Before I started on this coding journey, I used to teach ESL, 
+                        have been an education assistant, and directed a few tutoring centres.<br>
+                        <br>    
+                        My formal educational background is in English and French literature and early learning. I also speak English, 
+                        French, Greek, and Portuguese.<br>
+                        <br>
+                        I am committed to lifelong learning and self-improvement. My motto: small adjustments over time can make impactful 
+                        changes to one's trajectory.<br>
+                        <br>
+                        Let's collaborate!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects"class="bg-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">               
+                <!-- Project Card -->
+                <div class="col-md pt-5 px-5">                  
+                    <div class="h1 mb-4">
+                        <h1 class="mb-4">Projects</h1>
+                        <i class="fa-brands fa-html5 text-dark"></i>
+                        <i class="fa-brands fa-css3-alt text-dark"></i>
+                        <i class="fa-brands fa-bootstrap text-dark"></i>
+                    </div>
+                    <h3 class="mb-3">
+                        HTML, CSS, Bootstrap 5
+                    </h3>
+                    <p class="lead my-4">
+                        This website is built using the above languages.
+                    </p>
+                </div>
+                           
+                <div class="d-grid col-md gap-4 d-md-flex p-5">
+                    <!-- JS Button Card --> 
+                    <a class="btn btn-warning btn-lg p-5" href="#" role="button" style="width: 18rem; height: 18rem;">
+                        <div class="btn-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="fa-brands fa-square-js text-dark"></i>
+                            </div>
+                            <h3 class="button-title mb-3">
+                                JavaScript
+                            </h3>
+                            <p class="button-text lead">
+                                Click here to see my JavaScript project.
+                            </p>
+                        </div>
+                    </a>                              
+                    <!-- React Button Card -->
+                        <a class="btn btn-info btn-lg p-5" href="#" role="button" style="width: 18rem; height: 18rem;">
+                            <div class="btn-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="fa-brands fa-react text-dark"></i>
+                                </div>
+                                <h3 class="button-title mb-3">
+                                    React
+                                </h3>
+                                <p class="button-text lead">
+                                    Click here to see my React project.
+                                </p>
+                            </div>                 
+                        </a> 
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!-- Collaborate -->
+    <section id="collaborate" class="p-5 bg-secondary">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/static.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5 text-light">
+                    <h1>Collaborate</h1>
+                    <p class="lead">
+                        If there is anything from my portfolio website you are unsure of, please
+                        let me know. I'm happy to answer any questions you may have.<br>
+                        <br>
+                        I appreciate your time and consideration and look forward to hearing from you soon. 
+                    </p>
+                    <h3>You can find me on:</h3>
+                    <a href="#" class="btn" style="width: 9rem; height: 9rem;">
+                        <div class="card bg-secondary p-2">
+                            <div class="h1 mb-2">
+                                <i class="fa-brands fa-github text-dark"></i>
+                            </div>
+                            <h4 class="card-title text-dark mb-2">
+                                GitHub
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="btn" style="width: 9rem; height: 9rem;">
+                        <div class="card bg-primary p-2">
+                            <div class="h1 mb-2">
+                                <i class="fa-brands fa-linkedin text-light"></i>
+                            </div>
+                            <h4 class="card-title mb-2 text-light">
+                                LinkedIn
+                            </h4>
+                        </div>
+                    </a>        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-secondary text-light text-center position-relative">
+        <div class="container">
+            <p class="lead">
+                Copyright &copy; Eleni Danessis 2022. All rights reserved.<br>
+                <br>
+                Special thanks to Undraw, Font Awesome, and Traversy Media.
+            </p>
+            <a href="#" class="position-absolut bottom-0 end-0 p-5">
+                <i class="fa-solid fa-circle-arrow-up text-light h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
