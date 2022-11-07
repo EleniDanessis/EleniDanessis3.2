@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, javascript, frontend developer, developer">
+    <meta name="author" content="Eleni Danessis">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Eleni Danessis - Frontend Developer" />
+    <meta property="og:image" content="img/team.png" />
+    <link href=#>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Eleni Danessis 3.2</title>
+
+    <!-- Font Awesome Script Tag -->
+    <script src="https://kit.fontawesome.com/ffaa0aea6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-light navbar-dark py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">Eleni Danessis</a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-lighter"  href="#cargo">Cargo Counter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-lighter"  href="#scoreboard">Fresco Ball Scorboard App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-lighter"  href="#blackjack">Blackjack Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-lighter"  href="#repositories">Repositories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://elenidanessis.github.io/EleniDanessis3.2/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://elenidanessis.github.io/EleniDanessis3.2/#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://elenidanessis.github.io/EleniDanessis3.2/#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://elenidanessis.github.io/EleniDanessis3.2/#collaborate" class="nav-link">Collaborate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+
+        <!-- Top -->
+        <section class="bg-warning bg-opacity-25 p-5 p-lg-0 pt-lg-5 text-center text-sm-start border-bottom border-2">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <h1>Hi, welcome to my JavaScript project page.</h1>
+                    </div>
+                    <img class="img-fluid w-50" src="img/team.svg" alt="cartoon team collaborating on laptops">
+                </div>
+            </div>
+        </section>
+
+        <!-- 1st Project Page description + picture! -->
+        <section id="cargo" class="bg-warning bg-opacity-25 p-5 p-lg-0 pt-lg-5 text-center text-sm-start border-bottom border-2">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between m-5">
+                    <img class="img-fluid w-50 mx-5" src="img/ship.svg" alt="cartoon cargo ship">
+                    <div>
+                        <h1 class="mt-3">Cargo Counter App</h1>
+                        <br>
+                        <p>
+                            When I was growing up, I remember watching ferry boat seafarers using a hand held tally counter to keep 
+                            track of cargo then recording everything in a book. 
+                            Fast forward to today where there is a big push for everything to be digitized, I made this counting app
+                            with the purpose of helping stream line processes. 
+                            I used Vanilla JavaScript, HTML, CSS and Bootstrap 5 languages to create it. 
+                            <br><br>
+                            To use this app, simply press the count button and it will keep track of the count. 
+                            Pressing the save button will print the count below while the main count will be reset to zero. 
+                            Reset previous entries by refreshing the browser. 
+                            It's that easy!
+                            <br><br>
+                            Why would such a simple app be so important? Apart from facilitating effective and efficient improvements through
+                            data collection and analysis, it is versatile in its application to various fields.
+                        </p>
+                    </div>
+                </div>
+            
+                <!--Cargo App JS Project-->            
+                <div class="container text-center">
+                    <div class="col-12 col-md-6 offset-md-3 mb-3 border border-secondary">
+                        <div>
+                            <div class="col align-self-center">
+                                <h1 class="h1_java mt-5">Cargo Count</h1>
+                                <h2 class="h2_java fs-3" id="count-el">0</h2>
+                                <button class="btn btn-danger me-2" id="increment-btn" onclick="increment()">Count</button>
+                                <button class="btn btn-success" id="save-btn" onclick="save()">Save</button>
+                                <p class="p_java fs-4 mt-3" id="save-el">Previous Entries: </p>
+                                <br>
+                            </div>
+                            <script src="javascript-projects.js/cargoCounter.js"></script>    
+                        </div> 
+                    </div>   
+                </div>
+            </section>
+
+        <!-- 2nd Project Page description + picture! -->
+        <section id="scoreboard" class="bg-warning bg-opacity-25 p-5 p-lg-0 pt-lg-5 text-center text-sm-start border-bottom border-2">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between m-5">
+                    <div>
+                        <h1>Frescobol Scoreboard App</h1>
+                        <br>
+                        <p>
+                            This summer, I got into playing Frescobol. 
+                            <br><br>
+                            I remember watching cousins playing it on the beach in Greece. 
+                            We would always pool all of our games together and find ways to play inclusively. 
+                            <br><br>
+                            Seeing as we had one pair of raquets and we were a group of four or more cousins,
+                            having a scoreboard such as this app would have been helpful during the competitive
+                            moments allowing for equitable play. 
+                            <br><br>
+                            Some rules that could be used: one person or more can act as a referee or judge of
+                            sorts keeping track of the score, etc. Players score a point when their opponent misses
+                            a fair comeback. For example, if player A hits the ball back to their opponent in style, player A scores
+                            two points or if player B effectively hits a rather difficult comeback, player B scores
+                            three points. Play best out of 3 periods. Each period lasts until the ball hits the 
+                            ground. 
+                            <br><br>
+                            How the app works: the app keeps track of the score for home and guest teams or 
+                            opponents and is not limited to the use of tracking Frescocol games. Once a period is 
+                            complete, simply refresh the browser to reset the scoreboard. 
+                            <br><br>
+                            Have fun! 
+                        </p>
+                    </div>
+                    <img class="img-fluid w-50 mx-5" src="img/tennis.svg" alt="cartoon female about to hit a ball with a racket">
+                </div>
+                
+                <!--Frescobol Scoreboard JS Project-->            
+                <div class="container text-center">
+                    <div class="col-12 col-md-8 offset-md-2 mb-3 border border-secondary">
+                        <div class="row justify-content-between">
+                            <div class="col-6 col-md-4">
+                                <h1>HOME</h1>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <h1>GUEST</h1>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-6 col-md-4">
+                                <span id="home">0</span>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <span id="guest">0</span>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-6 col-md-4 buttons">
+                                <button onclick="add1Home()">+1</button>
+                                <button onclick="add2Home()">+2</button>
+                                <button onclick="add3Home()">+3</button>
+                            </div>
+                            <div class="col-6 col-md-4 buttons">
+                                <button onclick="add1Guest()">+1</button>
+                                <button onclick="add2Guest()">+2</button>
+                                <button onclick="add3Guest()">+3</button>
+                            </div>
+                        </div>    
+
+                        <div class="period">
+                            <div>
+                                <h1>PERIOD</h1>
+                            </div>
+                            <div>
+                                <span id="period">0</span>
+                            </div>
+                            <div class="buttons">
+                                <button onclick="period1()">1</button>
+                                <button onclick="period2()">2</button>
+                                <button onclick="period3()">3</button>
+                            </div>
+                        </div>
+
+                        <script src="javascript-projects.js/frescobol.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3rd Project Page description + picture! -->
+        <section id="blackjack" class="bg-warning bg-opacity-25 p-5 p-lg-0 pt-lg-5 text-center text-sm-start border-bottom border-2">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between mb-5">
+                    <img class="img-fluid w-50 mx-5" src="img/cards.svg" alt="cartoon playing cards with a queen and king">
+                    <div>
+                        <h1>Blackjack Game</h1>
+                        <br>
+                        <p>I'm not into gambling but I do like playing boardgames. Whenever I teach students, I try to have 
+                            fun with it and implement educational games. It would be interesting to build some virtual 
+                            games in the future.
+                        <br><br>
+                        For now, here's a game I learned how to build!
+                        </p>
+                    </div>
+                </div>
+
+                <!--Blackjack JS Project-->            
+                <div class="container text-center my-3">
+                    <div>
+                        <div class="col-12 col-md-4 offset-md-4 mb-3 border border-secondary">
+                            <h1>Blackjack</h1>
+                            <p id="message-el">Want to play a round?</p>
+                            <p id="cards-el">Cards:</p>
+                            <p id="sum-el">Sum:</p>
+                            <button onclick="startGame()">START GAME</button>
+                            <button onclick="newCard()">NEW CARD</button>
+                            <p id="player-el"></p> 
+                        </div>
+                        <script src="javascript-projects.js/blackjack.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Repositories description + buttons -->
+        <section id="repositories" class="bg-warning bg-opacity-25 p-lg-0 pt-lg-5 text-center text-sm-start">
+            <div class="container">
+                <div class="row">               
+                    <!-- Description -->
+                    <div class="col-md">                  
+                        <div class="h1 my-5">
+                            <h1>Repositories</h1>
+                        </div>
+                        <h3 class="my-5">
+                            Below are JS components I've built that can be applied to various fields. 
+                            Feel free to access them on my GitHub account. Once there, you can clone them and see their functionality
+                            and/or read the README descriptions that also have images of them in action.
+                        </h3>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between"> 
+                    <div class="d-grid offset-4 offset-md-0 offset-lg-1 offset-xl-2 gap-4 d-md-flex">
+                        <!-- Emoji Fighter Button Card -->
+                        <a class="btn btn-lg" style="background-color: white; color:#e98a1d; width: 10rem; height: 10rem;" target="_blank" href="https://github.com/EleniDanessis/emojiFighter" role="button">
+                            <div class="btn-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="fa-solid fa-dog"></i>
+                                </div>
+                                <h3 class="button-title mb-3">
+                                    Emoji Fighter
+                                </h3>
+                            </div>                 
+                        </a> 
+                        <!-- Sorting Fruits Button Card --> 
+                        <a class="btn btn-lg" style="background-color: #f08080; width: 10rem; height: 10rem;" target="_blank" href="https://github.com/EleniDanessis/sortingFruit" role="button">
+                            <div class="btn-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="fa-solid fa-apple-whole"></i>
+                                </div>
+                                <h3 class="button-title mb-3">
+                                    Sorting Fruit
+                                </h3>
+                            </div>
+                        </a>                              
+                        <!-- Password Generator Button Card -->
+                            <a class="btn btn-lg" style="background-color: black; color: green; width: 10rem; height: 10rem;" target="_blank" href="https://github.com/EleniDanessis/passwordGenerator" role="button">
+                                <div class="btn-body text-center">
+                                    <div class="h1 mb-3">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </div>
+                                    <h3 class="button-title mb-3">
+                                        Password Generator
+                                    </h3>
+                                </div>                 
+                            </a>
+                        <!-- Chrome Extension Button Card -->
+                        <a class="btn text-light btn-lg" style="background-color: #5f9341; width: 10rem; height: 10rem;" target="_blank" href="https://github.com/EleniDanessis/chromeExt" role="button">
+                            <div class="btn-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <h3 class="button-title mb-3">
+                                    Chrome Extension
+                                </h3>
+                            </div>                 
+                        </a>
+                    </div>
+                    <div class="row">               
+                        <!-- Additional Info -->
+                        <div class="col-md">                  
+                            <h4 class="my-5">
+                                You can find all of my repositories on my GitHub account and see their layout on their own. 
+                                I created specific CSS for each one which I did not transfer over to this page so that I could
+                                maintain this page's theme. Still, the button colours are indeed a nod to each repository's specific
+                                CSS colours.
+                            </h4>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p-5 bg-secondary text-light text-center position-relative">
+            <div class="container">
+                <p class="lead">
+                    Copyright &copy; Eleni Danessis 2022. All rights reserved.<br>
+                    <br>
+                    Special thanks to Undraw, Delesign, Per Herald Borgen at Scrimba, and Traversy Media.
+                </p>
+                <a href="#" class="position-absolut bottom-0 end-0 p-5">
+                    <i class="fa-solid fa-circle-arrow-up text-light h1"></i>
+                </a>
+            </div>
+        </footer>
+    
+        <!--JavaScript-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+        crossorigin="anonymous"></script>
+    </body>
+    </html>
